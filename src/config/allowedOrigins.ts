@@ -3,4 +3,10 @@ const allowedOrigins: string[] = [
   "http://localhost:5000",
 ];
 
-export default allowedOrigins
+export const getOrigins = () => {
+  const clientOrigin = process.env.CLIENT_URL;
+  if (clientOrigin) {
+    allowedOrigins.push(clientOrigin);
+  }
+  return allowedOrigins;
+};
