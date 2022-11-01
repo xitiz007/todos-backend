@@ -28,5 +28,6 @@
     "@types/lodash.merge": "^4.6.7",
     "nodemon": "^2.0.20",
     "prisma": "^4.5.0"
-  }
+  },
+  "engines": {"node": "18.10.0"}
 }
